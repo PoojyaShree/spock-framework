@@ -25,6 +25,11 @@
 	</repositories>
 	
 	<properties>
+		<!--added by naren-->
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+
 		
 		<groovy.core.version>2.4.11</groovy.core.version>
 		<groovy.spock.version>1.1-groovy-2.4</groovy.spock.version>
@@ -192,6 +197,14 @@
 			<version>2.10</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- 'echo' pipeline step -->
+                <dependency>
+                        <groupId>org.jenkins-ci.plugins.workflow</groupId>
+                        <artifactId>workflow-basic-steps</artifactId>
+                        <version>2.6</version>
+                        <scope>test</scope>
+                </dependency>
+
 		
 	</dependencies>
 	
